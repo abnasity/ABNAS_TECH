@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<div class="container my-5">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+    
+    <!-- Carousel Inner -->
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="https://media.istockphoto.com/id/458617533/photo/pair-of-adidas.jpg?s=612x612&w=0&k=20&c=BvzSF7yJ_c72m04Ot_edBtn68A3zR9CV_rgR_HQQnBY=" class="d-block w-100" alt="adidas sneakers">
+          </div>
+          <div class="col-md-6">
+            <div class="p-4">
+              <h2>Stylish Adidas Sneakers</h2>
+              <p>Explore our wide range of stylish Adidas sneakers for men. Choose from slip-ons, classics, and retro designs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="https://media.istockphoto.com/id/1199648781/photo/new-samsung-galaxy-note-10-android-smartphone.jpg?s=612x612&w=0&k=20&c=OVoepdXp3ibbBHm5KoouSxskXZ3pvg6zJnF1EPoR1Hc=" class="d-block w-100" alt="samsung phone">
+          </div>
+          <div class="col-md-6">
+            <div class="p-4">
+              <h2>Latest Samsung Phones</h2>
+              <p>Shop the newest Galaxy Z Fold, Flip, and Note series at unbeatable prices in Kenya.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="https://media.istockphoto.com/id/1316030712/photo/a-dior-store-at-the-bloor-yorkville-business-area-in-toronto.jpg?s=612x612&w=0&k=20&c=kErlBucF2LX3RzDgZF46rJUnsMS9CO8T5sQrztQ2KVI=" class="d-block w-100" alt="Dior fashion">
+          </div>
+          <div class="col-md-6">
+            <div class="p-4">
+              <h2>Elegant Dior Designs</h2>
+              <p>Step into luxury with stylish, bold, and sophisticated fashion from Dior.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <img src="https://media.istockphoto.com/id/458968161/photo/preparing-rolex-window-shop.jpg?s=612x612&w=0&k=20&c=oQe3jzDVoJA2kX-09tx7fOEa478qoKIKF7Bciteuj8U=" class="d-block w-100" alt="Rolex watches">
+          </div>
+          <div class="col-md-6">
+            <div class="p-4">
+              <h2>Luxury Rolex Watches</h2>
+              <p>Discover timeless elegance with Rolex. Explore collections built on precision and prestige.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- /.carousel-inner -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+  </div>
+</div>
+
+  
+  
+
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+  
+     
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/458068097/photo/adidas-superstar.jpg?s=612x612&w=0&k=20&c=cBTSduk5_pPHdQi-Qz_YgJrkceHM4Wk4oDww5O_vwaw=" class="card-img-top" alt="Adidas Superstar">
+          <div class="card-body">
+            <h5 class="card-title text-decoration-underline">Adidas</h5>
+            <p class="card-text">
+              Tired of shoes that can't keep up? Experience superior cushioning, durable materials,
+              and stylish designs that go the distance. Invest in your feet, invest in quality.
+            </p>
+            <a href="{{ url_for('adidas') }}" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1209051005/photo/logo-of-christian-dior-seen-on-their-prague-main-boutique-dior-or-cd-is-a-french-luxury-goods.jpg?s=612x612&w=0&k=20&c=wAxLQ4tGXApC7YigfPHtfGx1E9U15Z-jb2UJBz_K-eQ=" class="card-img-top" alt="Dior">
+          <div class="card-body">
+            <h5 class="card-title">Dior</h5>
+            <p class="card-text">
+              Your Style Starts from the Ground Up. Make a statement with our curated collection of designer clothes.
+              From sleek and sophisticated to bold and expressive. Elevate your look, step out with confidence.
+            </p>
+            <a href="{{ url_for('dior') }}" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/1962578958/photo/varna-bulgaria-25th-january-2024-new-smartphone-samsung-galaxy-s24-ultra-and-details-on-the.jpg?s=2048x2048&w=is&k=20&c=vpD-m86LuBZcKqNyWulKl-Bj1px0A1jjEKsuiptPamk=" class="card-img-top" alt="Samsung">
+          <div class="card-body">
+            <h5 class="card-title">Samsung</h5>
+            <p class="card-text">
+              Limited Edition Drop! The freshest smart device has just landed in Nairobi. Don't miss your chance
+              to snag these must-have styles. Designed for comfort and crafted with an eye for detail.
+            </p>
+            <a href="{{ url_for('samsung') }}" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+  
+      
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://media.istockphoto.com/id/458727719/photo/rolex-deepsea-wristwatch.jpg?s=612x612&w=0&k=20&c=9hv7ESwsaurJuqlMU0vnVzIVtq8CXNGe0j_Hs3ldb4Y=" class="card-img-top" alt="Rolex">
+          <div class="card-body">
+            <h5 class="card-title">Rolex</h5>
+            <p class="card-text">
+              This watch will ensure instant recognition and respect by appearance, grab one now.
+            </p>
+            <a href="{{ url_for('rolex') }}" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+{% endblock %}
