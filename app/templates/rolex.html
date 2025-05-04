@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Featured Products</h2>
+    <div class="d-flex justify-content-center">
+        <div class="card w-75 h-100">
+            <div class="card h-100">
+                <img src="https://media.istockphoto.com/id/458727719/photo/rolex-deepsea-wristwatch.jpg?s=612x612&w=0&k=20&c=9hv7ESwsaurJuqlMU0vnVzIVtq8CXNGe0j_Hs3ldb4Y=" class="card-img-top" alt="Rolex">
+                <div class="card-body"></div>
+                    <h5 class="card-title">Rolex</h5>
+                    <p class="card-text">This watch will ensure instant recognition and respect by appearance, grab one now.</p>
+                    <a href="{{ url_for('rolex') }}" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
